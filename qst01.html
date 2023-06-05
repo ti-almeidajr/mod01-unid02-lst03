@@ -2,11 +2,11 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Lst 02 - Qst 01</title>
+    <title>Lst 03 - Qst 01</title>
 
     <script type="text/javascript">          
         {               
-            function contarCarac()
+            function contarCaracteres()
                 {
                     let nota1 = parseFloat(document.getElementById("nota1").value);
                    
@@ -21,9 +21,9 @@
     <form>
         <fieldset>
             <legend>QST01: Digitar um texto e informar o quantitativo de caracteres</legend><br>
-            <label for="nota1">Digite a 1ª nota: </label> <input type="text" id="nota1" name="curso" value="" size="2" maxlength="3">
+            <label for="nota1">Digite um texto: </label> <input type="text" id="nota1" name="curso" value="" size="100" maxlength="100">
            
-            <input type="button" value="Calcular Média" onclick="mediaAluno()">
+            <input type="button" value="Informar quantidade de caracteres" onclick="contarCaracteres()">
         </fieldset>
     </form><br>
     <p id="resultado"></p>

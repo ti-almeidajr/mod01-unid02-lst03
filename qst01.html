@@ -8,24 +8,16 @@
         {               
             function contarCaracteres()
                 {
-                    let nota1 = parseFloat(document.getElementById("nota1").value);
-                   
-                    
-
-                  
+                    let texto = document.querySelector("#texto").value;
+                    document.getElementById("resultado").innerHTML = "O texto digitado contém " + texto + " caracteres"
+                }         
         }
     </script>
 
 </head>
 <body>
-    <form>
-        <fieldset>
-            <legend>QST01: Digitar um texto e informar o quantitativo de caracteres</legend><br>
-            <label for="nota1">Digite um texto: </label> <input type="text" id="nota1" name="curso" value="" size="100" maxlength="100">
-           
-            <input type="button" value="Informar quantidade de caracteres" onclick="contarCaracteres()">
-        </fieldset>
-    </form><br>
+    <label for="texto">Digite um texto: </label> <input type="text" id="texto" placeholder="Digite seu texto" size="100" maxlength="100">
+    <input type="button" value="Contar caracteres" onclick="contarCaracteres()">
     <p id="resultado"></p>
 </body>
 </html>

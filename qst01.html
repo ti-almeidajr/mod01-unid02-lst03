@@ -8,8 +8,9 @@
         {               
             function contarCaracteres()
                 {
-                    let texto = document.querySelector("#texto").value;
-                    document.getElementById("resultado").innerHTML = "O texto digitado contém " + texto + " caracteres"
+                    let texto = document.getElementById("texto").value;
+                    
+                    //document.getElementById("resultado").innerHTML = "O texto digitado contém " + ${texto.length} + " caracteres"
                 }         
         }
     </script>
@@ -18,6 +19,6 @@
 <body>
     <label for="texto">Digite um texto: </label> <input type="text" id="texto" placeholder="Digite seu texto" size="100" maxlength="100">
     <input type="button" value="Contar caracteres" onclick="contarCaracteres()">
-    <p id="resultado"></p>
+    <p id="resultado">document.write(`Olá, <strong>${texto}</strong>! Seu nome tem ${texto.length} letras. <br/>`) </p>
 </body>
 </html>

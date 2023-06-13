@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Lst 03 - Qst 02</title>
+    <title>Lst 03 - Qst 04</title>
 
     <script type="text/javascript">          
         {               
@@ -10,8 +10,14 @@
                 {
                     let texto = "Ifpi";
                     let result0 = texto.substr(0, 1);
-            
-                    document.getElementById("resultado").innerHTML = result0 + "<br>";
+                    let result1 = texto.substr(0, 2);
+                    let result2 = texto.substr(0, 3);
+                    let result3 = texto.substr(0, 4);
+                    let result4 = texto.substr(0, 3);
+                    let result5 = texto.substr(0, 2);
+                    let result6 = texto.substr(0, 1);
+
+                    document.getElementById("resultado").innerHTML = result0 + "<br>" + result1 + "<br>" + result2 + "<br>" + result3 + "<br>" + result4 + "<br>" + result5 + "<br>" + result6 + "<br>";
                 }         
         }
     </script>
@@ -20,7 +26,7 @@
 <body>
     <form>
         <fieldset>
-            <legend>QST02</legend>
+            <legend>QST04</legend>
                 <input type="button" value="Mostrar Resultado" onclick="mostraCaracteres()">
                 <p id="resultado">  </p>
         </fieldset>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lst 03 - Qst 08</title>
+
+    <script type="text/javascript">          
+        {               
+            function contarCaracteres()
+                {
+                    let texto = document.getElementById("texto").value;
+                    let palavras = texto.split(/\s+/).length;
+                    document.getElementById("resultado").innerHTML = "Quantidade de caracteres: " + texto.length + "<br>" + "Quantidade de palavras: " + palavras;
+                }         
+        }
+    </script>
+
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>QST08</legend>
+                <label for="texto">Digite um texto: </label> <input type="text" id="texto" size="100" maxlength="100">
+                <input type="button" value="Contar caracteres" onclick="contarCaracteres()"><br><br>
+                <fieldset>
+                    <legend>RESULTADO</legend>
+                        <p id="resultado">  </p>
+                </fieldset>
+        </fieldset>
+    </form>
+</body>
+</html>

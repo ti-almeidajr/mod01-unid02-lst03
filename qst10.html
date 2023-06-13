@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista 03 - Questão 10</title>
+
+    <script type="text/javascript">          
+        {               
+            function espacosBranco()
+                {
+                    let frase = document.getElementById("frase").value;
+                    let espacos = frase.split(/\s+/).length - 1;
+                    document.getElementById("resultado").innerHTML = "Quantidade de espaços em brancos na frase: " + espacos;
+                }         
+        }
+    </script>
+
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Questão 10</legend>
+                <label for="frase">Digite uma frase: </label> <input type="text" id="frase" size="100" maxlength="100">
+                <input type="button" value="Mostrar quantidade de espaços em branco na frase" onclick="espacosBranco()"><br><br>
+                <fieldset>
+                    <legend>RESULTADO</legend>
+                        <p id="resultado">  </p>
+                </fieldset>
+        </fieldset>
+    </form>
+</body>
+</html>

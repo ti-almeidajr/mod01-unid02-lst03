@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista 03 - Questão 07</title>
+
+    <script type="text/javascript">          
+        {               
+            function numExtenso()
+                {
+                    let num = parseInt(document.getElementById("num").value);
+                    let porExtenso = extenso(num);
+                    document.getElementById("resultado").innerHTML = porExtenso;
+                }         
+        }
+    </script>
+
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Questão 07</legend>
+                <label for="texto">Digite um texto: </label> <input type="text" id="texto" size="100" maxlength="100">
+                <input type="button" value="Mostrar número por extenso" onclick="numExtenso()"><br><br>
+                <fieldset>
+                    <legend>RESULTADO</legend>
+                        <p id="resultado">  </p>
+                </fieldset>
+        </fieldset>
+    </form>
+</body>
+</html>

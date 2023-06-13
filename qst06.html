@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista 03 - Questão 05</title>
+
+    <script type="text/javascript">          
+        {               
+            function trocarPalavras()
+                {
+                    let frase = document.getElementById("frase").value;
+                    let substituida = document.getElementById("substituida").value;
+                    let substituta = document.getElementById("substituta").value;
+                    let result = frase.replace(substituida, substituta);
+                    document.getElementById("resultado").innerHTML = result;
+                }         
+        }
+    </script>
+
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Questão 05</legend>
+                <label for="frase">Digite uma frase: </label> <input type="text" id="frase" size="100" maxlength="100"><br><br>
+                <label for="substituida">Digite uma palavra da frase a ser substituída: </label> <input type="text" id="substituida" size="20" maxlength="20"><br><br>
+                <label for="substituta">Digite uma palavra que vai substituir: </label> <input type="text" id="substituta" size="20" maxlength="20"><br><br>
+                <input type="button" value="Trocar palavras" onclick="trocarPalavras()"><br><br>
+                <fieldset>
+                    <legend>RESULTADO</legend>
+                        <p id="resultado">  </p>
+                </fieldset>
+        </fieldset>
+    </form>
+</body>
+</html>

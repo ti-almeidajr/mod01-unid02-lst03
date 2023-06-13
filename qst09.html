@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lst 03 - Qst 09</title>
+
+    <script type="text/javascript">          
+        {               
+            function mostrarSobrenome()
+                {
+                    let nome = document.getElementById("nome").value;
+                    let sobrenome = document.getElementById("sobrenome").value;
+                    document.getElementById("resultado").innerHTML = "Nome completo: " + nome + "<br> Sobrenome: " +sobrenome ;
+                }         
+        }
+    </script>
+
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>QST09</legend>
+                <label for="nome">Digite seu nome completo: </label> <input type="text" id="nome" size="100" maxlength="100"><br><br>
+                <label for="sobrenome">Digite seu sobrenome: </label> <input type="text" id="sobrenome" size="20" maxlength="20"><br><br>
+                <input type="button" value="Mostrar Sobrenome" onclick="mostrarSobrenome()"><br><br>
+                <fieldset>
+                    <legend>RESULTADO</legend>
+                        <p id="resultado">  </p>
+                </fieldset>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lst 03 - Qst 02</title>
+
+    <script type="text/javascript">          
+        {               
+            function mostraCaracteres()
+                {
+                    let texto = "Ifpi";
+                    let result0 = texto.substr(0, 1);
+            
+                    document.getElementById("resultado").innerHTML = result0 + "<br>";
+                }         
+        }
+    </script>
+
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>QST02</legend>
+                <input type="button" value="Mostrar Resultado" onclick="mostraCaracteres()">
+                <p id="resultado">  </p>
+        </fieldset>
+    </form>
+</body>
+</html>

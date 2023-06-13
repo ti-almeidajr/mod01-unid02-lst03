@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lst 03 - Qst 03</title>
+
+    <script type="text/javascript">          
+        {               
+            function mostrarMaiusculo()
+                {
+                    let texto = document.getElementById("texto").value;
+                    document.getElementById("resultado").innerHTML = "O texto digitado contém " + texto.length + " caracteres"
+                }         
+        }
+    </script>
+
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>QST03</legend>
+                <label for="texto">Digite um texto: </label> <input type="text" id="texto" placeholder="Digite seu texto" size="100" maxlength="100">
+                <input type="button" value="Converter Caracteres para Maiúsculo" onclick="mostrarMaiusculo()">
+                <p id="resultado">  </p>
+        </fieldset>
+    </form>
+</body>
+</html>
